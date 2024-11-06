@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+//List of todo items,each with a unique id and title
 const todoList = [
   {
     id:1,
@@ -18,11 +19,15 @@ const todoList = [
   }
 ];
 
+//App component
 function App() {
   return (
     <>
       <div>
+        {/* Level 1 heading */}
         <h1>Todo List</h1>
+
+        {/* Unordered list that renders each item in the todoList array as a list item */}
         <ul>
           {todoList.map(function(item){
             return <li key={item.id}>{item.title}</li>;
