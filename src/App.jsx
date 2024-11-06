@@ -10,6 +10,7 @@ function App() {
     <>
       <div>
         <h1>Todo List</h1>
+        <ul></ul>
       </div>
     </>
   )
