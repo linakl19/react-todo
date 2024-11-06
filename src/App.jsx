@@ -9,11 +9,11 @@ const todoList = [
     title: "Take dogs for a walk."
   },
   {
-    id:1,
+    id:2,
     title: "Make dinner."
   },
   {
-    id:1,
+    id:3,
     title: "Complete CTD assigment."
   }
 ];
