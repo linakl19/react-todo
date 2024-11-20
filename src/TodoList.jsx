@@ -21,7 +21,7 @@ function TodoList(){
         /* Unordered list that renders each item in the todoList array as a list item */
         <ul>
             {todoList.map(function(item){
-                return <li key={item.id}>{item.title}</li>;
+                return ;
             })}
         </ul>
     );
