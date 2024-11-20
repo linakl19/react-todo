@@ -1,4 +1,5 @@
 import React from "react";
+import TodoListItem from "./TodoListItem";
 
 //List of todo items,each with a unique id and title
 const todoList = [
@@ -16,12 +17,14 @@ const todoList = [
     }
 ];
 
+// Refactor TodoList.jsx to use new TodoListItem component
 function TodoList(){
     return (
-        /* Unordered list that renders each item in the todoList array as a list item */
         <ul>
-            {todoList.map(function(item){
-                return ;
+            {/* Use the TodoListItem component inside the map()*/}
+            {todoList.map(function(todo){
+                // Pass key as a prop equal to the id of the todo object and pass todo as a prop
+                return <TodoListItem key={todo.id} todo={todo}/>;
             })}
         </ul>
     );
