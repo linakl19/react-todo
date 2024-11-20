@@ -2,8 +2,15 @@ import React from "react";
 
 
 const AddTodoForm = () => {
-    const handleAddTodoForm = () => {
-
+    // create a new function called handleAddTodo that takes event as a parameter
+    const handleAddTodoForm = (event) => {
+        // prevent the default behavior of the form submit
+        event.preventDefault();
+        // retrieve the value of the title element from the event target
+        let todoTitle = event.target.title;
+        console.log(todoTitle);
+        // reset the form so the text input value is cleared
+        event.target.reset();
     };
 
     return (
