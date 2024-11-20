@@ -9,7 +9,7 @@ import AddTodoForm from './AddTodoForm'
 function App() {
 
   // create a new state variable named newTodo with update function named setNewTodo
-  const  [newTodo, setNewTodo] = React.useState('');
+  const  [newTodo, setNewTodo] = React.useState("");
 
   return (
     <>
@@ -18,7 +18,7 @@ function App() {
         {/* Pass setNewTodo as a callback handler prop named onAddTodo to the AddTodoForm component */}
         <AddTodoForm onAddTodo={setNewTodo}/>
         {/* add a paragraph element that displays the value of newTodo variable */}
-        <p>{newTodo.value}</p>
+        <p>{newTodo}</p>
         <TodoList />
       </div>
     </>
