@@ -1,12 +1,16 @@
 import React from "react";
 
-// Component for a form that allows users to add a new todo item, 
-// including a label and input field for the todo title, and a submit button
+
 const AddTodoForm = () => {
+    const handleAddTodoForm = () => {
+
+    };
+
     return (
         <form action="">
             <label htmlFor="todoTitle">Title</label>
-            <input type="text" id="todoTitle"/>
+            {/* Add a name attribute to the text input with value title */}
+            <input type="text" id="todoTitle" name="title"/>
             <button type="submit">Add</button>
         </form>
     );
